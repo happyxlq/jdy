@@ -7,6 +7,7 @@
             "email": "test@test.com"
         }
     ],
+    "license": "MIT",
     "require": {
         "php": "^7.2.0"
     },
