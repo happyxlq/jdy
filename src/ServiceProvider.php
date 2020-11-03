@@ -1,6 +1,6 @@
 <?php
 
-namespace OtkruBiz\Jdy;
+namespace Kingdee\Jdy;
 
 use Kingdee\Jdy\Factory;
 use Kingdee\Jdy\MiniProgram\Application as MiniProgram;
