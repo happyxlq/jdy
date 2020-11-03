@@ -1,3 +1,3 @@
 jdy crm form laravel 
 
-composer require happyxlq/jdy
+composer require happyxlq/kingdeejdy
