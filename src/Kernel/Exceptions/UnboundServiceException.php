@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Exceptions;
+namespace Kingdee\Jdy\Kernel\Exceptions;
 
 /**
  * Class InvalidConfigException.

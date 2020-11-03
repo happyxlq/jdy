@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Log;
+namespace Kingdee\Jdy\Kernel\Log;
 
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\ErrorLogHandler;
@@ -19,7 +19,7 @@ use Monolog\Handler\SlackWebhookHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogHandler;
 use Monolog\Logger as Monolog;
-use Kingdee\jdy\Kernel\ServiceContainer;
+use Kingdee\Jdy\Kernel\ServiceContainer;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -30,7 +30,7 @@ use Psr\Log\LoggerInterface;
 class LogManager implements LoggerInterface
 {
     /**
-     * @var \Kingdee\jdy\Kernel\ServiceContainer
+     * @var \Kingdee\Jdy\Kernel\ServiceContainer
      */
     protected $app;
 
@@ -67,7 +67,7 @@ class LogManager implements LoggerInterface
     /**
      * LogManager constructor.
      *
-     * @param \Kingdee\jdy\Kernel\ServiceContainer $app
+     * @param \Kingdee\Jdy\Kernel\ServiceContainer $app
      */
     public function __construct(ServiceContainer $app)
     {
@@ -170,8 +170,8 @@ class LogManager implements LoggerInterface
      */
     protected function createEmergencyLogger()
     {
-        return new Monolog('jdy', $this->prepareHandlers([new StreamHandler(
-            \sys_get_temp_dir().'/jdy/jdy.log', $this->level(['level' => 'debug'])
+        return new Monolog('Jdy', $this->prepareHandlers([new StreamHandler(
+            \sys_get_temp_dir().'/Jdy/Jdy.log', $this->level(['level' => 'debug'])
         )]));
     }
 
@@ -250,7 +250,7 @@ class LogManager implements LoggerInterface
             $this->prepareHandler(new SlackWebhookHandler(
                 $config['url'],
                 $config['channel'] ?? null,
-                $config['username'] ?? 'jdy',
+                $config['username'] ?? 'Jdy',
                 $config['attachment'] ?? true,
                 $config['emoji'] ?? ':boom:',
                 $config['short'] ?? false,
@@ -271,7 +271,7 @@ class LogManager implements LoggerInterface
     {
         return new Monolog($this->parseChannel($config), [
             $this->prepareHandler(new SyslogHandler(
-                    'jdy', $config['facility'] ?? LOG_USER, $this->level($config))
+                    'Jdy', $config['facility'] ?? LOG_USER, $this->level($config))
             ),
         ]);
     }

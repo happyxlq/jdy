@@ -8,24 +8,24 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy;
+namespace Kingdee\Jdy;
 
 /**
  * Class Factory.
  *
- * @method static \Kingdee\jdy\Application    jdy(array $config)
+ * @method static \Kingdee\Jdy\Application    Jdy(array $config)
  */
 class Factory
 {
     /**
      * @param array $config
      *
-     * @return \Kingdee\jdy\Application
+     * @return \Kingdee\Jdy\Application
      */
     public static function make(array $config, $name = 'auth')
     {
         $namespace = Kernel\Support\Str::studly($name);
-        $application = "\\Kingdee\\jdy\\{$namespace}\\Application";
+        $application = "\\Kingdee\\Jdy\\{$namespace}\\Application";
 
         return new $application($config);
     }

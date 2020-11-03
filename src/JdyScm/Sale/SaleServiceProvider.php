@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the Kingdee/jdy.
+ * This file is part of the Kingdee/Jdy.
  *
  * (c) alim <alim@bulutbazar.com>
  *
@@ -8,7 +8,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\JdyScm\Sale;
+namespace Kingdee\Jdy\JdyScm\Sale;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

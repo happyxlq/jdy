@@ -1,7 +1,6 @@
 {
-    "name": "happyxlq/kingdeejdy",
-    "description": "sdk for jdy",
-    "license": "MIT",
+    "name": "happyxlq/kingdeeJdy",
+    "description": "sdk for Jdy",
     "authors": [
         {
             "name": "test",
@@ -13,17 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kingdee\\jdy\\": "src"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Kingdee\\jdy\\ServiceProvider"
-            ],
-            "aliases": {
-                "jdy": "Kingdee\\jdy\\Facade"
-            }
+            "Kingdee\\Jdy\\": "src"
         }
     }
 }

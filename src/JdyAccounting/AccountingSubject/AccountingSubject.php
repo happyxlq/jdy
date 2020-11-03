@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\JdyAccounting\AccountingSubject;
+namespace Kingdee\Jdy\JdyAccounting\AccountingSubject;
 
-use Kingdee\jdy\JdyAccounting\JdyAccountingClient;
+use Kingdee\Jdy\JdyAccounting\JdyAccountingClient;
 
 /**
  * Class ServiceList.
@@ -47,8 +47,8 @@ class AccountingSubject extends JdyAccountingClient
     --useQtyAux	false	number	是否使用数量辅助核算
     --qtyUnit	false	string	数量单位编码
      *
-     * @return array|object|\Kingdee\jdy\Kernel\Support\Collection|\Psr\Http\Message\ResponseInterface|string
-     * @throws \Kingdee\jdy\Kernel\Exceptions\InvalidConfigException
+     * @return array|object|\Kingdee\Jdy\Kernel\Support\Collection|\Psr\Http\Message\ResponseInterface|string
+     * @throws \Kingdee\Jdy\Kernel\Exceptions\InvalidConfigException
      *
      *
      */

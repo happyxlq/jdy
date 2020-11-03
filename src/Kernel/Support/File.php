@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Support;
+namespace Kingdee\Jdy\Kernel\Support;
 
 use finfo;
 

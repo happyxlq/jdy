@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Auth\Auth;
+namespace Kingdee\Jdy\Auth\Auth;
 
-use Kingdee\jdy\Kernel\BaseClient;
+use Kingdee\Jdy\Kernel\BaseClient;
 
 /**
  * Class Auth.
@@ -25,9 +25,9 @@ class AuthCode extends BaseClient
      *
      * @param string $accessToken
      *
-     * @throws \Kingdee\jdy\Kernel\Exceptions\InvalidConfigException
+     * @throws \Kingdee\Jdy\Kernel\Exceptions\InvalidConfigException
      *
-     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\jdy\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\Jdy\Kernel\Support\Collection|array|object|string
      */
     public function authCode(string $accessToken)
     {

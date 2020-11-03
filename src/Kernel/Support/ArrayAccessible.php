@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Support;
+namespace Kingdee\Jdy\Kernel\Support;
 
 use ArrayAccess;
 use ArrayIterator;
 use IteratorAggregate;
-use Kingdee\jdy\Kernel\Contracts\Arrayable;
+use Kingdee\Jdy\Kernel\Contracts\Arrayable;
 
 /**
  * Class ArrayAccessible.

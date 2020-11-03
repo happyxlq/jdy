@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Exceptions;
+namespace Kingdee\Jdy\Kernel\Exceptions;
 
 use Psr\Http\Message\ResponseInterface;
 
@@ -26,7 +26,7 @@ class HttpException extends Exception
     public $response;
 
     /**
-     * @var \Psr\Http\Message\ResponseInterface|\Kingdee\jdy\Kernel\Support\Collection|array|object|string
+     * @var \Psr\Http\Message\ResponseInterface|\Kingdee\Jdy\Kernel\Support\Collection|array|object|string
      */
     public $formattedResponse;
 

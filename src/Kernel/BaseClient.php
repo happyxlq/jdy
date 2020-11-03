@@ -8,13 +8,13 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel;
+namespace Kingdee\Jdy\Kernel;
 
 use GuzzleHttp\MessageFormatter;
 use GuzzleHttp\Middleware;
-use Kingdee\jdy\Kernel\Contracts\AccessTokenInterface;
-use Kingdee\jdy\Kernel\Http\Response;
-use Kingdee\jdy\Kernel\Traits\HasHttpRequests;
+use Kingdee\Jdy\Kernel\Contracts\AccessTokenInterface;
+use Kingdee\Jdy\Kernel\Http\Response;
+use Kingdee\Jdy\Kernel\Traits\HasHttpRequests;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
@@ -27,11 +27,11 @@ class BaseClient
 {
     use HasHttpRequests { request as performRequest; }
     /**
-     * @var \Kingdee\jdy\Kernel\ServiceContainer
+     * @var \Kingdee\Jdy\Kernel\ServiceContainer
      */
     protected $app;
     /**
-     * @var \Kingdee\jdy\Kernel\Contracts\AccessTokenInterface
+     * @var \Kingdee\Jdy\Kernel\Contracts\AccessTokenInterface
      */
     protected $accessToken;
     /**
@@ -42,8 +42,8 @@ class BaseClient
     /**
      * BaseClient constructor.
      *
-     * @param \Kingdee\jdy\Kernel\ServiceContainer                    $app
-     * @param \Kingdee\jdy\Kernel\Contracts\AccessTokenInterface|null $accessToken
+     * @param \Kingdee\Jdy\Kernel\ServiceContainer                    $app
+     * @param \Kingdee\Jdy\Kernel\Contracts\AccessTokenInterface|null $accessToken
      */
     public function __construct(ServiceContainer $app, AccessTokenInterface $accessToken = null)
     {
@@ -58,9 +58,9 @@ class BaseClient
      * @param string $url
      * @param array  $query
      *
-     * @throws \Kingdee\jdy\Kernel\Exceptions\InvalidConfigException
+     * @throws \Kingdee\Jdy\Kernel\Exceptions\InvalidConfigException
      *
-     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\jdy\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\Jdy\Kernel\Support\Collection|array|object|string
      */
     public function httpGet(string $url, array $query = [])
     {
@@ -73,9 +73,9 @@ class BaseClient
      * @param string $url
      * @param array  $data
      *
-     * @throws \Kingdee\jdy\Kernel\Exceptions\InvalidConfigException
+     * @throws \Kingdee\Jdy\Kernel\Exceptions\InvalidConfigException
      *
-     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\jdy\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\Jdy\Kernel\Support\Collection|array|object|string
      */
     public function httpPost(string $url, array $data = [])
     {
@@ -89,9 +89,9 @@ class BaseClient
      * @param string|array $data
      * @param array        $query
      *
-     * @throws \Kingdee\jdy\Kernel\Exceptions\InvalidConfigException
+     * @throws \Kingdee\Jdy\Kernel\Exceptions\InvalidConfigException
      *
-     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\jdy\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\Jdy\Kernel\Support\Collection|array|object|string
      */
     public function httpPostJson(string $url, array $data = [], array $query = [])
     {
@@ -106,9 +106,9 @@ class BaseClient
      * @param array  $form
      * @param array  $query
      *
-     * @throws \Kingdee\jdy\Kernel\Exceptions\InvalidConfigException
+     * @throws \Kingdee\Jdy\Kernel\Exceptions\InvalidConfigException
      *
-     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\jdy\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\Jdy\Kernel\Support\Collection|array|object|string
      */
     public function httpUpload(string $url, array $files = [], array $form = [], array $query = [])
     {
@@ -135,7 +135,7 @@ class BaseClient
     }
 
     /**
-     * @param \Kingdee\jdy\Kernel\Contracts\AccessTokenInterface $accessToken
+     * @param \Kingdee\Jdy\Kernel\Contracts\AccessTokenInterface $accessToken
      *
      * @return $this
      */
@@ -152,9 +152,9 @@ class BaseClient
      * @param array  $options
      * @param bool   $returnRaw
      *
-     * @throws \Kingdee\jdy\Kernel\Exceptions\InvalidConfigException
+     * @throws \Kingdee\Jdy\Kernel\Exceptions\InvalidConfigException
      *
-     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\jdy\Kernel\Support\Collection|array|object|string
+     * @return \Psr\Http\Message\ResponseInterface|\Kingdee\Jdy\Kernel\Support\Collection|array|object|string
      */
     public function request(string $url, string $method = 'GET', array $options = [], $returnRaw = false)
     {
@@ -170,9 +170,9 @@ class BaseClient
      * @param string $method
      * @param array  $options
      *
-     * @throws \Kingdee\jdy\Kernel\Exceptions\InvalidConfigException
+     * @throws \Kingdee\Jdy\Kernel\Exceptions\InvalidConfigException
      *
-     * @return \Kingdee\jdy\Kernel\Http\Response
+     * @return \Kingdee\Jdy\Kernel\Http\Response
      */
     public function requestRaw(string $url, string $method = 'GET', array $options = [])
     {

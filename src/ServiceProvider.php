@@ -1,9 +1,9 @@
 <?php
 
-namespace OtkruBiz\jdy;
+namespace OtkruBiz\Jdy;
 
-use Kingdee\jdy\Factory;
-use Kingdee\jdy\MiniProgram\Application as MiniProgram;
+use Kingdee\Jdy\Factory;
+use Kingdee\Jdy\MiniProgram\Application as MiniProgram;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Laravel\Lumen\Application as LumenApplication;
@@ -23,15 +23,15 @@ class ServiceProvider extends LaravelServiceProvider
      */
     protected function setupConfig()
     {
-        $source = realpath( __DIR__ . '/config/jdy.php' );
+        $source = realpath( __DIR__ . '/config/Jdy.php' );
 
         if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
-            $this->publishes([$source => config_path('jdy.php')], 'jdy');
+            $this->publishes([$source => config_path('Jdy.php')], 'Jdy');
         } elseif ($this->app instanceof LumenApplication) {
-            $this->app->configure('jdy');
+            $this->app->configure('Jdy');
         }
 
-        $this->mergeConfigFrom($source, 'jdy');
+        $this->mergeConfigFrom($source, 'Jdy');
     }
 
     /**
@@ -46,23 +46,23 @@ class ServiceProvider extends LaravelServiceProvider
         ];
 
         foreach ($apps as $name => $class) {
-            if (empty(config('jdy.'.$name))) {
+            if (empty(config('Jdy.'.$name))) {
                 continue;
             }
 
-            if (!empty(config('jdy.'.$name.'.app_id')) ) {
+            if (!empty(config('Jdy.'.$name.'.app_id')) ) {
                 $accounts = [
-                    'default' => config('jdy.'.$name),
+                    'default' => config('Jdy.'.$name),
                 ];
-                config(['jdy.'.$name.'.default' => $accounts['default']]);
+                config(['Jdy.'.$name.'.default' => $accounts['default']]);
             } else {
-                $accounts = config('jdy.'.$name);
+                $accounts = config('Jdy.'.$name);
             }
 
             foreach ($accounts as $account => $config) {
-                $this->app->singleton("jdy.{$name}.{$account}", function ($laravelApp) use ($name, $account, $config, $class) {
-                    $app = new $class(array_merge(config('jdy.defaults', []), $config));
-                    if (config('jdy.defaults.use_laravel_cache')) {
+                $this->app->singleton("Jdy.{$name}.{$account}", function ($laravelApp) use ($name, $account, $config, $class) {
+                    $app = new $class(array_merge(config('Jdy.defaults', []), $config));
+                    if (config('Jdy.defaults.use_laravel_cache')) {
                         $app['cache'] = $laravelApp['cache.store'];
                     }
                     $app['request'] = $laravelApp['request'];
@@ -70,9 +70,9 @@ class ServiceProvider extends LaravelServiceProvider
                     return $app;
                 });
             }
-            $this->app->alias("jdy.{$name}.default", 'jdy.'.$name);
+            $this->app->alias("Jdy.{$name}.default", 'Jdy.'.$name);
 
-            $this->app->alias('jdy.'.$name, $class);
+            $this->app->alias('Jdy.'.$name, $class);
         }
     }
 }

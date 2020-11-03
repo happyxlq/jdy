@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Decorators;
+namespace Kingdee\Jdy\Kernel\Decorators;
 
 /**
  * Class FinallyResult.

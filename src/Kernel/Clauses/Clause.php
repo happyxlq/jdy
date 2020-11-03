@@ -8,7 +8,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Clauses;
+namespace Kingdee\Jdy\Kernel\Clauses;
 
 /**
  * Class Clause.

@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Providers;
+namespace Kingdee\Jdy\Kernel\Providers;
 
-use Kingdee\jdy\Kernel\Config;
+use Kingdee\Jdy\Kernel\Config;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

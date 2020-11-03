@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Http;
+namespace Kingdee\Jdy\Kernel\Http;
 
 use GuzzleHttp\Psr7\Response as GuzzleResponse;
-use Kingdee\jdy\Kernel\Support\Collection;
+use Kingdee\Jdy\Kernel\Support\Collection;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -37,7 +37,7 @@ class Response extends GuzzleResponse
     /**
      * @param \Psr\Http\Message\ResponseInterface $response
      *
-     * @return \Kingdee\jdy\Kernel\Http\Response
+     * @return \Kingdee\Jdy\Kernel\Http\Response
      */
     public static function buildFromPsrResponse(ResponseInterface $response)
     {
@@ -81,7 +81,7 @@ class Response extends GuzzleResponse
     /**
      * Get collection data.
      *
-     * @return \Kingdee\jdy\Kernel\Support\Collection
+     * @return \Kingdee\Jdy\Kernel\Support\Collection
      */
     public function toCollection()
     {

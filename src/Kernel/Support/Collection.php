@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Support;
+namespace Kingdee\Jdy\Kernel\Support;
 
 use ArrayAccess;
 use ArrayIterator;
 use Countable;
 use IteratorAggregate;
 use JsonSerializable;
-use Kingdee\jdy\Kernel\Contracts\Arrayable;
+use Kingdee\Jdy\Kernel\Contracts\Arrayable;
 use Serializable;
 
 /**
@@ -58,7 +58,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
      *
      * @param array $keys
      *
-     * @return \Kingdee\jdy\Kernel\Support\Collection
+     * @return \Kingdee\Jdy\Kernel\Support\Collection
      */
     public function only(array $keys)
     {
@@ -94,7 +94,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
      *
      * @param Collection|array $items
      *
-     * @return \Kingdee\jdy\Kernel\Support\Collection
+     * @return \Kingdee\Jdy\Kernel\Support\Collection
      */
     public function merge($items)
     {

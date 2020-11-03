@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Kingdee/jdy.
+ * This file is part of the Kingdee/Jdy.
  *
  * (c) alim <alim@bulutbazar.com>
  *
@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy;
+namespace Kingdee\Jdy;
 
 use Illuminate\Support\Facades\Facade as LaravelFacade;
 
@@ -27,14 +27,14 @@ class Facade extends LaravelFacade
      */
     public static function getFacadeAccessor()
     {
-        return 'jdy.mini_program';
+        return 'Jdy.mini_program';
     }
 
     /**
-     * @return \Kingdee\jdy\MiniProgram\Application
+     * @return \Kingdee\Jdy\MiniProgram\Application
      */
     public static function miniProgram($name = '')
     {
-        return $name ? app('jdy.mini_program.'.$name) : app('jdy.mini_program');
+        return $name ? app('Jdy.mini_program.'.$name) : app('Jdy.mini_program');
     }
 }

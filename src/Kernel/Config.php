@@ -8,9 +8,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel;
+namespace Kingdee\Jdy\Kernel;
 
-use Kingdee\jdy\Kernel\Support\Collection;
+use Kingdee\Jdy\Kernel\Support\Collection;
 
 /**
  * Class Config.

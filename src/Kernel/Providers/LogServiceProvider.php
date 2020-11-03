@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Providers;
+namespace Kingdee\Jdy\Kernel\Providers;
 
-use Kingdee\jdy\Kernel\Log\LogManager;
+use Kingdee\Jdy\Kernel\Log\LogManager;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
@@ -69,7 +69,7 @@ class LogServiceProvider implements ServiceProviderInterface
                 'channels' => [
                     'single' => [
                         'driver' => 'single',
-                        'path'   => $app['config']->get('log.file') ?: \sys_get_temp_dir().'/logs/jdy.log',
+                        'path'   => $app['config']->get('log.file') ?: \sys_get_temp_dir().'/logs/Jdy.log',
                         'level'  => $app['config']->get('log.level', 'debug'),
                     ],
                 ],

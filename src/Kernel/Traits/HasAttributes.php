@@ -8,11 +8,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Traits;
+namespace Kingdee\Jdy\Kernel\Traits;
 
-use Kingdee\jdy\Kernel\Exceptions\InvalidArgumentException;
-use Kingdee\jdy\Kernel\Support\Arr;
-use Kingdee\jdy\Kernel\Support\Str;
+use Kingdee\Jdy\Kernel\Exceptions\InvalidArgumentException;
+use Kingdee\Jdy\Kernel\Support\Arr;
+use Kingdee\Jdy\Kernel\Support\Str;
 
 /**
  * Trait Attributes.
@@ -233,7 +233,7 @@ trait HasAttributes
     /**
      * Check required attributes.
      *
-     * @throws \Kingdee\jdy\Kernel\Exceptions\InvalidArgumentException
+     * @throws \Kingdee\Jdy\Kernel\Exceptions\InvalidArgumentException
      */
     protected function checkRequiredAttributes()
     {

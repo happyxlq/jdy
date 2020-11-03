@@ -8,11 +8,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Kernel\Traits;
+namespace Kingdee\Jdy\Kernel\Traits;
 
 use Doctrine\Common\Cache\Cache;
 use Doctrine\Common\Cache\FilesystemCache;
-use Kingdee\jdy\Kernel\ServiceContainer;
+use Kingdee\Jdy\Kernel\ServiceContainer;
 use Psr\SimpleCache\CacheInterface;
 
 /**

@@ -8,9 +8,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\Auth\Auth;
+namespace Kingdee\Jdy\Auth\Auth;
 
-use Kingdee\jdy\Kernel\AccessToken as BaseAccessToken;
+use Kingdee\Jdy\Kernel\AccessToken as BaseAccessToken;
 
 /**
  * Class AuthorizerAccessToken.

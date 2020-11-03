@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\JdyScm\System;
+namespace Kingdee\Jdy\JdyScm\System;
 
-use Kingdee\jdy\Kernel\BaseClient;
+use Kingdee\Jdy\Kernel\BaseClient;
 
 /**
  * Class ServiceList.

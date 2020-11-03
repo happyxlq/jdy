@@ -1,6 +1,6 @@
 <?php
 
-use Kingdee\jdy\Factory;
+use Kingdee\Jdy\Factory;
 use PHPUnit\Framework\TestCase;
 
 class OrgAccessTokenTest extends TestCase
@@ -13,7 +13,7 @@ class OrgAccessTokenTest extends TestCase
         $accessToken = $token['data']['access_token'];
 
 
-        $jdyscm = Factory::make($config, 'jdyScm');
+        $jdyscm = Factory::make($config, 'JdyScm');
 
         $d = $jdyscm->inventory->list(31231);
         var_dump($d);die;
@@ -99,25 +99,25 @@ class OrgAccessTokenTest extends TestCase
 //        $bill = $jdyscm->check->check('954521512312312', 'sale', 2);
 //        var_dump($bill);die;
 
-        $jdyAccounting = Factory::make($config, 'jdyAccounting');
-//        $serviceList = $jdyAccounting->system->serviceList();
+        $JdyAccounting = Factory::make($config, 'JdyAccounting');
+//        $serviceList = $JdyAccounting->system->serviceList();
 
 
-        $jdyAccounting->system->setSid(792289491028);
-        $jdyAccounting->system->setDbId(791079231922211);
+        $JdyAccounting->system->setSid(792289491028);
+        $JdyAccounting->system->setDbId(791079231922211);
 
 
-//        $profile = $jdyAccounting->system->profile('std_currency');
+//        $profile = $JdyAccounting->system->profile('std_currency');
 //        var_dump($profile);die;
 
-//        $accountingSubjectList = $jdyAccounting->account->list();
+//        $accountingSubjectList = $JdyAccounting->account->list();
 //        var_dump($accountingSubjectList);die;
 
 //        $filter = [
 //            'fromPeriod'=> '202001',
 //            'toPeriod'  => '202002'
 //        ];
-//        $voucherList = $jdyAccounting->voucher->list($filter);
+//        $voucherList = $JdyAccounting->voucher->list($filter);
 //        var_dump($voucherList);die;
 
         $vouchers = [
@@ -137,7 +137,7 @@ class OrgAccessTokenTest extends TestCase
             ]
         ];
 
-        $vouchers = $jdyAccounting->voucher->add($vouchers);
+        $vouchers = $JdyAccounting->voucher->add($vouchers);
         var_dump($vouchers);die;
 
     }

@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\JdyScm\Inventory;
+namespace Kingdee\Jdy\JdyScm\Inventory;
 
 
 
-use Kingdee\jdy\JdyScm\JdyScmClient;
-use Kingdee\jdy\Kernel\BaseClient;
+use Kingdee\Jdy\JdyScm\JdyScmClient;
+use Kingdee\Jdy\Kernel\BaseClient;
 
 /**
  * Class ServiceList.

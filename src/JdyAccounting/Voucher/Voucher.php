@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Kingdee\jdy\JdyAccounting\Voucher;
+namespace Kingdee\Jdy\JdyAccounting\Voucher;
 
-use Kingdee\jdy\JdyAccounting\JdyAccountingClient;
+use Kingdee\Jdy\JdyAccounting\JdyAccountingClient;
 
 /**
  * Class ServiceList.
