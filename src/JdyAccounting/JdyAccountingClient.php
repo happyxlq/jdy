@@ -63,8 +63,12 @@ class JdyAccountingClient extends BaseClient {
     }
 
 
-    private function getQuery(string $type = 'dbId'): array
+    private function getQuery(string $type = null): array
     {
+        if(empty($type))
+        {
+            $type = 'dbId';
+        }
         return [$type => $this->{$type}];
     }
 
