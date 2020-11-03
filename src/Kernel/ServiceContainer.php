@@ -8,12 +8,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\Kernel;
+namespace Kingdee\jdy\Kernel;
 
-use OtkurBiz\jdy\Kernel\Providers\ConfigServiceProvider;
-use OtkurBiz\jdy\Kernel\Providers\HttpClientServiceProvider;
-use OtkurBiz\jdy\Kernel\Providers\LogServiceProvider;
-use OtkurBiz\jdy\Kernel\Providers\RequestServiceProvider;
+use Kingdee\jdy\Kernel\Providers\ConfigServiceProvider;
+use Kingdee\jdy\Kernel\Providers\HttpClientServiceProvider;
+use Kingdee\jdy\Kernel\Providers\LogServiceProvider;
+use Kingdee\jdy\Kernel\Providers\RequestServiceProvider;
 use Pimple\Container;
 
 /**
@@ -21,7 +21,7 @@ use Pimple\Container;
  *
  * @author alim <alim@bulutbazar.com>
  *
- * @property \OtkurBiz\jdy\Kernel\Config                 $config
+ * @property \Kingdee\jdy\Kernel\Config                 $config
  * @property \Symfony\Component\HttpFoundation\Request $request
  * @property \GuzzleHttp\Client                        $http_client
  * @property \Monolog\Logger                           $logger

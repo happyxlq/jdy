@@ -1,6 +1,6 @@
 <?php
 
-use OtkurBiz\jdy\Factory;
+use Kingdee\jdy\Factory;
 use PHPUnit\Framework\TestCase;
 
 class AuthCodeTest extends TestCase

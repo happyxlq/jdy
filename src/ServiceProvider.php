@@ -2,8 +2,8 @@
 
 namespace OtkruBiz\jdy;
 
-use OtkurBiz\jdy\Factory;
-use OtkurBiz\jdy\MiniProgram\Application as MiniProgram;
+use Kingdee\jdy\Factory;
+use Kingdee\jdy\MiniProgram\Application as MiniProgram;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Laravel\Lumen\Application as LumenApplication;

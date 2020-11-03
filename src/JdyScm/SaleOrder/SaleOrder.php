@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\JdyScm\SaleOrder;
+namespace Kingdee\jdy\JdyScm\SaleOrder;
 
 
 
-use OtkurBiz\jdy\JdyScm\JdyScmClient;
-use OtkurBiz\jdy\Kernel\BaseClient;
+use Kingdee\jdy\JdyScm\JdyScmClient;
+use Kingdee\jdy\Kernel\BaseClient;
 
 /**
  * Class ServiceList.

@@ -8,12 +8,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\Kernel;
+namespace Kingdee\jdy\Kernel;
 
-use OtkurBiz\jdy\Kernel\Contracts\Arrayable;
-use OtkurBiz\jdy\Kernel\Exceptions\RuntimeException;
-use OtkurBiz\jdy\Kernel\Support\Arr;
-use OtkurBiz\jdy\Kernel\Support\Collection;
+use Kingdee\jdy\Kernel\Contracts\Arrayable;
+use Kingdee\jdy\Kernel\Exceptions\RuntimeException;
+use Kingdee\jdy\Kernel\Support\Arr;
+use Kingdee\jdy\Kernel\Support\Collection;
 
 function data_get($data, $key, $default = null)
 {

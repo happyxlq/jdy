@@ -8,15 +8,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\Auth;
+namespace Kingdee\jdy\Auth;
 
-use OtkurBiz\jdy\Auth\Auth\AuthServiceProvider;
-use OtkurBiz\jdy\Kernel\ServiceContainer;
+use Kingdee\jdy\Auth\Auth\AuthServiceProvider;
+use Kingdee\jdy\Kernel\ServiceContainer;
 
 /**
  * Class Application.
  *
- * @property \OtkurBiz\jdy\MiniProgram\Auth\AccessToken $access_token
+ * @property \Kingdee\jdy\MiniProgram\Auth\AccessToken $access_token
  */
 class Application extends ServiceContainer
 {

@@ -1,5 +1,5 @@
 {
-    "name": "happyxlq\/jdy",
+    "name": "happyxlq/Kingdee/jdy",
     "description": "sdk for jdy。",
     "license": "MIT",
     "authors": [
@@ -10,16 +10,16 @@
     ],
     "autoload": {
         "psr-4": {
-            "OtkurBiz\\jdy\\": "src"
+            "Kingdee\\jdy\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "OtkurBiz\\jdy\\ServiceProvider"
+                "Kingdee\\jdy\\ServiceProvider"
             ],
             "aliases": {
-                "jdy": "OtkurBiz\\jdy\\Facade"
+                "jdy": "Kingdee\\jdy\\Facade"
             }
         }
     }

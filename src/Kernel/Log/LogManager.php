@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\Kernel\Log;
+namespace Kingdee\jdy\Kernel\Log;
 
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\ErrorLogHandler;
@@ -19,7 +19,7 @@ use Monolog\Handler\SlackWebhookHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogHandler;
 use Monolog\Logger as Monolog;
-use OtkurBiz\jdy\Kernel\ServiceContainer;
+use Kingdee\jdy\Kernel\ServiceContainer;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -30,7 +30,7 @@ use Psr\Log\LoggerInterface;
 class LogManager implements LoggerInterface
 {
     /**
-     * @var \OtkurBiz\jdy\Kernel\ServiceContainer
+     * @var \Kingdee\jdy\Kernel\ServiceContainer
      */
     protected $app;
 
@@ -67,7 +67,7 @@ class LogManager implements LoggerInterface
     /**
      * LogManager constructor.
      *
-     * @param \OtkurBiz\jdy\Kernel\ServiceContainer $app
+     * @param \Kingdee\jdy\Kernel\ServiceContainer $app
      */
     public function __construct(ServiceContainer $app)
     {

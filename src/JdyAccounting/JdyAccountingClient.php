@@ -1,10 +1,10 @@
 <?php
-namespace OtkurBiz\jdy\JdyAccounting;
+namespace Kingdee\jdy\JdyAccounting;
 
-use OtkurBiz\jdy\Kernel\BaseClient;
-use OtkurBiz\jdy\Kernel\Contracts\AccessTokenInterface;
-use OtkurBiz\jdy\Kernel\ServiceContainer;
-use OtkurBiz\jdy\Kernel\Traits\InteractsWithCache;
+use Kingdee\jdy\Kernel\BaseClient;
+use Kingdee\jdy\Kernel\Contracts\AccessTokenInterface;
+use Kingdee\jdy\Kernel\ServiceContainer;
+use Kingdee\jdy\Kernel\Traits\InteractsWithCache;
 use Psr\Http\Message\RequestInterface;
 
 class JdyAccountingClient extends BaseClient {
@@ -12,8 +12,8 @@ class JdyAccountingClient extends BaseClient {
 
     public $dbId;
     public $sId;
-    public $dbIdCacheKey = 'otkurbiz.jdy.jdyAccounting.dbId';
-    public $sIdCacheKey = 'otkurbiz.jdy.jdyAccounting.sId';
+    public $dbIdCacheKey = 'Kingdee.jdy.jdyAccounting.dbId';
+    public $sIdCacheKey = 'Kingdee.jdy.jdyAccounting.sId';
     public function __construct( ServiceContainer $app, AccessTokenInterface $accessToken = null ) {
         parent::__construct( $app, $accessToken );
         $this->dbId = $this->getCache()->fetch($this->dbIdCacheKey);

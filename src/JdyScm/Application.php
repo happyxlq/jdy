@@ -8,22 +8,22 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\JdyScm;
+namespace Kingdee\jdy\JdyScm;
 
-use OtkurBiz\jdy\Auth\Auth\AuthServiceProvider;
-use OtkurBiz\jdy\JdyScm\Bill\BillServiceProvider;
-use OtkurBiz\jdy\JdyScm\Customer\CustomerServiceProvider;
-use OtkurBiz\jdy\JdyScm\Inventory\InventoryServiceProvider;
-use OtkurBiz\jdy\JdyScm\Product\ProductServiceProvider;
-use OtkurBiz\jdy\JdyScm\Sale\SaleServiceProvider;
-use OtkurBiz\jdy\JdyScm\SaleOrder\SaleOrderServiceProvider;
-use OtkurBiz\jdy\JdyScm\SaleReturn\SaleReturnServiceProvider;
-use OtkurBiz\jdy\Kernel\ServiceContainer;
+use Kingdee\jdy\Auth\Auth\AuthServiceProvider;
+use Kingdee\jdy\JdyScm\Bill\BillServiceProvider;
+use Kingdee\jdy\JdyScm\Customer\CustomerServiceProvider;
+use Kingdee\jdy\JdyScm\Inventory\InventoryServiceProvider;
+use Kingdee\jdy\JdyScm\Product\ProductServiceProvider;
+use Kingdee\jdy\JdyScm\Sale\SaleServiceProvider;
+use Kingdee\jdy\JdyScm\SaleOrder\SaleOrderServiceProvider;
+use Kingdee\jdy\JdyScm\SaleReturn\SaleReturnServiceProvider;
+use Kingdee\jdy\Kernel\ServiceContainer;
 
 /**
  * Class Application.
  *
- * @property \OtkurBiz\jdy\MiniProgram\Auth\AccessToken $access_token
+ * @property \Kingdee\jdy\MiniProgram\Auth\AccessToken $access_token
  */
 class Application extends ServiceContainer
 {

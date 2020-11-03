@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\Kernel\Support;
+namespace Kingdee\jdy\Kernel\Support;
 
-use OtkurBiz\jdy\Kernel\Exceptions\RuntimeException;
+use Kingdee\jdy\Kernel\Exceptions\RuntimeException;
 
 /**
  * Class Str.

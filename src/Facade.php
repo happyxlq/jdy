@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the otkurbiz/jdy.
+ * This file is part of the Kingdee/jdy.
  *
  * (c) alim <alim@bulutbazar.com>
  *
@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy;
+namespace Kingdee\jdy;
 
 use Illuminate\Support\Facades\Facade as LaravelFacade;
 
@@ -31,7 +31,7 @@ class Facade extends LaravelFacade
     }
 
     /**
-     * @return \OtkurBiz\jdy\MiniProgram\Application
+     * @return \Kingdee\jdy\MiniProgram\Application
      */
     public static function miniProgram($name = '')
     {

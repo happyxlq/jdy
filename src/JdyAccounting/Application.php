@@ -8,18 +8,18 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\JdyAccounting;
+namespace Kingdee\jdy\JdyAccounting;
 
-use OtkurBiz\jdy\Auth\Auth\AuthServiceProvider;
-use OtkurBiz\jdy\JdyAccounting\AccountingSubject\AccountingSubjectServiceProvider;
-use OtkurBiz\jdy\JdyAccounting\Voucher\VoucherServiceProvider;
-use OtkurBiz\jdy\JdyAccounting\System\SystemServiceProvider;
-use OtkurBiz\jdy\Kernel\ServiceContainer;
+use Kingdee\jdy\Auth\Auth\AuthServiceProvider;
+use Kingdee\jdy\JdyAccounting\AccountingSubject\AccountingSubjectServiceProvider;
+use Kingdee\jdy\JdyAccounting\Voucher\VoucherServiceProvider;
+use Kingdee\jdy\JdyAccounting\System\SystemServiceProvider;
+use Kingdee\jdy\Kernel\ServiceContainer;
 
 /**
  * Class Application.
  *
- * @property \OtkurBiz\jdy\MiniProgram\Auth\AccessToken $access_token
+ * @property \Kingdee\jdy\MiniProgram\Auth\AccessToken $access_token
  */
 class Application extends ServiceContainer
 {

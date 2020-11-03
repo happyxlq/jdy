@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\Kernel\Support;
+namespace Kingdee\jdy\Kernel\Support;
 
 /*
  * helpers.

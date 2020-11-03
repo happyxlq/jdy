@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\Kernel\Providers;
+namespace Kingdee\jdy\Kernel\Providers;
 
-use OtkurBiz\jdy\Kernel\Log\LogManager;
+use Kingdee\jdy\Kernel\Log\LogManager;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

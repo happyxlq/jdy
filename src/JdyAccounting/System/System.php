@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\JdyAccounting\System;
+namespace Kingdee\jdy\JdyAccounting\System;
 
-use OtkurBiz\jdy\JdyAccounting\JdyAccountingClient;
+use Kingdee\jdy\JdyAccounting\JdyAccountingClient;
 
 /**
  * Class ServiceList.

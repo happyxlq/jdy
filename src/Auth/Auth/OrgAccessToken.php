@@ -8,9 +8,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\Auth\Auth;
+namespace Kingdee\jdy\Auth\Auth;
 
-use OtkurBiz\jdy\Kernel\AccessToken as BaseAccessToken;
+use Kingdee\jdy\Kernel\AccessToken as BaseAccessToken;
 
 /**
  * Class AuthorizerAccessToken.
@@ -24,7 +24,7 @@ class OrgAccessToken extends BaseAccessToken
      */
     protected $endpointToGetToken = 'https://api.kingdee.com/auth/org/access_token';
     protected $requestMethod = 'GET';
-    protected $cachePrefix = 'otkurbiz.jdy.kernel.org.access_token.';
+    protected $cachePrefix = 'Kingdee.jdy.kernel.org.access_token.';
     /**
      * @return array
      */

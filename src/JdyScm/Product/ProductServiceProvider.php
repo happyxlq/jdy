@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the otkurbiz/jdy.
+ * This file is part of the Kingdee/jdy.
  *
  * (c) alim <alim@bulutbazar.com>
  *
@@ -8,9 +8,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\JdyScm\Product;
+namespace Kingdee\jdy\JdyScm\Product;
 
-use OtkurBiz\jdy\JdyScm\Product\Product;
+use Kingdee\jdy\JdyScm\Product\Product;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

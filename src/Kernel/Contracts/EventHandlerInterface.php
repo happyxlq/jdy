@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace OtkurBiz\jdy\Kernel\Contracts;
+namespace Kingdee\jdy\Kernel\Contracts;
 
 /**
  * Interface EventHandlerInterface.

@@ -1,7 +1,7 @@
 <?php
-namespace OtkurBiz\jdy\JdyScm;
+namespace Kingdee\jdy\JdyScm;
 
-use OtkurBiz\jdy\Kernel\BaseClient;
+use Kingdee\jdy\Kernel\BaseClient;
 use Psr\Http\Message\RequestInterface;
 
 class JdyScmClient extends BaseClient {
